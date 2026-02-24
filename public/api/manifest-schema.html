@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Manifest Schema - Angular-YC</title>
+    <link rel="stylesheet" href="/assets/docs.css" />
+  </head>
+  <body>
+    <h1>Manifest Schema</h1>
+    <p><code>deploy.manifest.json</code> is produced by <code>angular-yc build</code> and consumed by Terraform.</p>
+    <h2>Top-Level Keys</h2>
+    <ul>
+      <li><code>schemaVersion</code>, <code>buildId</code>, <code>timestamp</code></li>
+      <li><code>angularVersion</code>, <code>projectName</code></li>
+      <li><code>capabilities</code>, <code>routing</code>, <code>artifacts</code></li>
+      <li><code>responseCache</code>, <code>environment</code>, <code>deployment</code></li>
+    </ul>
+    <h2>Response Cache Model</h2>
+    <p>
+      Angular-YC uses response caching instead of ISR: HTML/body in Object Storage and metadata/tag TTL in YDB.
+    </p>
+    <p>See <a href="/api/manifest-schema.md">Markdown version</a> for more detail.</p>
+  </body>
+</html>

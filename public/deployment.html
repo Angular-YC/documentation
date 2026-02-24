@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Deployment - Angular-YC</title>
+    <link rel="stylesheet" href="/assets/docs.css" />
+  </head>
+  <body>
+    <h1>Deployment</h1>
+    <ol>
+      <li>Run <code>angular-yc analyze</code> to detect capabilities.</li>
+      <li>Run <code>angular-yc build</code> to produce zips + manifest.</li>
+      <li>Run <code>angular-yc upload</code> to place artifacts in Object Storage.</li>
+      <li>Apply Terraform module <code>angular_yc</code> with generated manifest.</li>
+    </ol>
+  </body>
+</html>

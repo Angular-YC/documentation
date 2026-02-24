@@ -1,2 +1,51 @@
 <!doctype html>
-<html><head><meta charset="utf-8" /><title>Troubleshooting</title></head><body><h1>Troubleshooting</h1></body></html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Troubleshooting - Angular-YC</title>
+    <link rel="stylesheet" href="../assets/docs.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="../index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="../index.html">Home</a>
+          <a href="../docs.html">Docs</a>
+          <a href="../architecture.html">Architecture</a>
+          <a href="../deployment.html">Deployment</a>
+          <a href="../getting-started/quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Reference</p>
+        <h1>Troubleshooting</h1>
+      </section>
+
+      <section class="panel">
+        <div class="kicker-list">
+          <div class="kicker-item">
+            <strong>Build fails on SSR bundle</strong>
+            Verify <code>@angular/ssr</code> setup and ensure server entry compiles under the selected Angular version.
+          </div>
+          <div class="kicker-item">
+            <strong>Manifest mismatch in Terraform</strong>
+            Regenerate with <code>angular-yc build</code> and re-upload artifacts before applying infrastructure.
+          </div>
+          <div class="kicker-item">
+            <strong>Stale rendered responses</strong>
+            Check response-cache TTL and purge endpoint auth headers/signature handling.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
+  </body>
+</html>

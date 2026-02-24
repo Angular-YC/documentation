@@ -4,11 +4,61 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Angular-YC</title>
-    <link rel="stylesheet" href="/assets/docs.css" />
+    <link rel="stylesheet" href="assets/docs.css" />
   </head>
   <body>
-    <h1>Angular-YC</h1>
-    <p>Deploy Angular SSR apps on Yandex Cloud.</p>
-    <p><a href="/docs.html">Open docs</a></p>
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a class="active" href="index.html">Home</a>
+          <a href="docs.html">Docs</a>
+          <a href="architecture.html">Architecture</a>
+          <a href="deployment.html">Deployment</a>
+          <a href="getting-started/quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Serverless Angular Delivery</p>
+        <h1>Deploy Angular SSR on Yandex Cloud with zero platform glue.</h1>
+        <p class="lead">
+          Angular-YC packages SSR, API routes, static assets, and response cache into a deployment model designed
+          for Cloud Functions + API Gateway.
+        </p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="docs.html">Open Documentation</a>
+          <a class="btn" href="getting-started/quick-start.html">Run Quick Start</a>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>What You Get</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Smart Build Pipeline</h3>
+            <p>Analyzer + builder generate deploy-ready artifacts and manifest from Angular SSR projects.</p>
+          </article>
+          <article class="card">
+            <h3>Function Runtime</h3>
+            <p>Express-compatible SSR/API handler and framework-agnostic image optimization endpoint.</p>
+          </article>
+          <article class="card">
+            <h3>Response Cache</h3>
+            <p>S3 object bodies + YDB metadata and TTL for deterministic cache invalidation without ISR complexity.</p>
+          </article>
+          <article class="card">
+            <h3>Terraform Modules</h3>
+            <p>Provision Functions, API Gateway, Object Storage, DNS/TLS, and security resources from manifest input.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
   </body>
 </html>

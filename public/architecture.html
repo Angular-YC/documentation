@@ -4,15 +4,52 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Architecture - Angular-YC</title>
-    <link rel="stylesheet" href="/assets/docs.css" />
+    <link rel="stylesheet" href="assets/docs.css" />
   </head>
   <body>
-    <h1>Architecture</h1>
-    <ul>
-      <li><strong>CLI</strong>: analyzes Angular features and builds deployment artifacts.</li>
-      <li><strong>Runtime</strong>: Cloud Function adapters for SSR/API and image optimization.</li>
-      <li><strong>Terraform</strong>: provisions Object Storage, Functions, API Gateway, DNS, TLS.</li>
-      <li><strong>Response Cache</strong>: Object Storage body cache + YDB metadata/tag index.</li>
-    </ul>
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="docs.html">Docs</a>
+          <a class="active" href="architecture.html">Architecture</a>
+          <a href="deployment.html">Deployment</a>
+          <a href="getting-started/quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">System Design</p>
+        <h1>How Angular-YC maps Angular SSR workloads to Yandex Cloud primitives.</h1>
+      </section>
+
+      <section class="panel">
+        <div class="kicker-list">
+          <div class="kicker-item">
+            <strong>CLI</strong>
+            Analyzer detects Angular capabilities, builder emits artifacts and OpenAPI contract.
+          </div>
+          <div class="kicker-item">
+            <strong>Runtime</strong>
+            Cloud Function adapters bridge API Gateway events into SSR/API handlers.
+          </div>
+          <div class="kicker-item">
+            <strong>Terraform</strong>
+            Modules provision storage, functions, gateway, logging, DNS, and TLS.
+          </div>
+          <div class="kicker-item">
+            <strong>Response Cache</strong>
+            Object Storage for body payload + YDB metadata and TTL index.
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
   </body>
 </html>

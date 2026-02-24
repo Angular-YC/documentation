@@ -4,15 +4,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Deployment - Angular-YC</title>
-    <link rel="stylesheet" href="/assets/docs.css" />
+    <link rel="stylesheet" href="assets/docs.css" />
   </head>
   <body>
-    <h1>Deployment</h1>
-    <ol>
-      <li>Run <code>angular-yc analyze</code> to detect capabilities.</li>
-      <li>Run <code>angular-yc build</code> to produce zips + manifest.</li>
-      <li>Run <code>angular-yc upload</code> to place artifacts in Object Storage.</li>
-      <li>Apply Terraform module <code>angular_yc</code> with generated manifest.</li>
-    </ol>
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a href="docs.html">Docs</a>
+          <a href="architecture.html">Architecture</a>
+          <a class="active" href="deployment.html">Deployment</a>
+          <a href="getting-started/quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Release Flow</p>
+        <h1>From Angular source to live serverless infrastructure.</h1>
+      </section>
+
+      <section class="panel">
+        <ol>
+          <li>Run <code>angular-yc analyze</code> to detect SSR/API/cache capabilities.</li>
+          <li>Run <code>angular-yc build</code> to create ZIP artifacts and <code>deploy.manifest.json</code>.</li>
+          <li>Run <code>angular-yc upload</code> to publish artifacts to Object Storage.</li>
+          <li>Apply Terraform module <code>angular_yc</code> with generated manifest coordinates.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
   </body>
 </html>

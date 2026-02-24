@@ -4,16 +4,68 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Docs - Angular-YC</title>
-    <link rel="stylesheet" href="/assets/docs.css" />
+    <link rel="stylesheet" href="assets/docs.css" />
   </head>
   <body>
-    <h1>Documentation</h1>
-    <ul>
-      <li><a href="/getting-started/installation.html">Installation</a></li>
-      <li><a href="/getting-started/quick-start.html">Quick Start</a></li>
-      <li><a href="/api/cli-commands.html">CLI Commands</a></li>
-      <li><a href="/api/manifest-schema.html">Manifest Schema</a></li>
-      <li><a href="/reference/troubleshooting.html">Troubleshooting</a></li>
-    </ul>
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="index.html">Home</a>
+          <a class="active" href="docs.html">Docs</a>
+          <a href="architecture.html">Architecture</a>
+          <a href="deployment.html">Deployment</a>
+          <a href="getting-started/quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Documentation Hub</p>
+        <h1>Everything needed to ship Angular-YC in production.</h1>
+        <p class="lead">Start with quick setup, then dive into API/manifest details and operational playbooks.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Getting Started</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3><a href="getting-started/installation.html">Installation</a></h3>
+            <p>Install dependencies and build the CLI/runtime workspace.</p>
+          </article>
+          <article class="card">
+            <h3><a href="getting-started/quick-start.html">Quick Start</a></h3>
+            <p>Run analyze, build, upload, then apply Terraform in one flow.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Reference</h2>
+        <div class="card-grid">
+          <article class="card">
+            <h3><a href="api/cli-commands.html">CLI Commands</a></h3>
+            <p>Command-by-command reference for `angular-yc` workflows.</p>
+          </article>
+          <article class="card">
+            <h3><a href="api/manifest-schema.html">Manifest Schema</a></h3>
+            <p>Structure and semantics of `deploy.manifest.json`.</p>
+          </article>
+          <article class="card">
+            <h3><a href="reference/troubleshooting.html">Troubleshooting</a></h3>
+            <p>Common deployment issues and practical fixes.</p>
+          </article>
+          <article class="card">
+            <h3><a href="guides/migration-from-angular-universal.html">Migration Guide</a></h3>
+            <p>Move existing Angular Universal projects to Angular-YC.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
   </body>
 </html>

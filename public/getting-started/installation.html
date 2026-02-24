@@ -4,13 +4,41 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Installation - Angular-YC</title>
-    <link rel="stylesheet" href="/assets/docs.css" />
+    <link rel="stylesheet" href="../assets/docs.css" />
   </head>
   <body>
-    <h1>Installation</h1>
-    <p>Install and build CLI workspace:</p>
-    <pre><code>pnpm install
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="../index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="../index.html">Home</a>
+          <a class="active" href="../docs.html">Docs</a>
+          <a href="../architecture.html">Architecture</a>
+          <a href="../deployment.html">Deployment</a>
+          <a href="quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Getting Started</p>
+        <h1>Install the workspace and prepare your deployment pipeline.</h1>
+      </section>
+
+      <section class="panel">
+        <p>Install and build the CLI workspace:</p>
+        <pre><code>pnpm install
 pnpm build</code></pre>
-    <p>Terraform deployment consumes the generated <code>deploy.manifest.json</code>.</p>
+        <p>
+          Terraform deployment consumes the generated <code>deploy.manifest.json</code>, so make sure your build output is
+          available before applying infrastructure changes.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
   </body>
 </html>

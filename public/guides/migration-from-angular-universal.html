@@ -1,2 +1,43 @@
 <!doctype html>
-<html><head><meta charset="utf-8" /><title>Migration Guide</title></head><body><h1>Migration from Angular Universal</h1></body></html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Migration from Angular Universal - Angular-YC</title>
+    <link rel="stylesheet" href="../assets/docs.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="../index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="../index.html">Home</a>
+          <a href="../docs.html">Docs</a>
+          <a href="../architecture.html">Architecture</a>
+          <a href="../deployment.html">Deployment</a>
+          <a href="../getting-started/quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Migration Guide</p>
+        <h1>Move from Angular Universal to Angular-YC</h1>
+      </section>
+
+      <section class="panel">
+        <ol>
+          <li>Keep your existing Angular SSR app structure and Express entry point.</li>
+          <li>Replace custom deployment scripts with <code>angular-yc analyze/build/upload</code>.</li>
+          <li>Adopt manifest-driven Terraform module inputs for repeatable environments.</li>
+          <li>Configure response cache settings where you previously relied on ad-hoc SSR caching logic.</li>
+        </ol>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
+  </body>
+</html>

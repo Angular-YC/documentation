@@ -1,2 +1,43 @@
 <!doctype html>
-<html><head><meta charset="utf-8" /><title>Example</title></head><body><h1>Angular SSR Response Cache</h1></body></html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Angular SSR Response Cache - Angular-YC</title>
+    <link rel="stylesheet" href="../assets/docs.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="../index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="../index.html">Home</a>
+          <a href="../docs.html">Docs</a>
+          <a href="../architecture.html">Architecture</a>
+          <a href="../deployment.html">Deployment</a>
+          <a href="../getting-started/quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Example</p>
+        <h1>Angular SSR + response cache</h1>
+        <p class="lead">Reference pattern for caching rendered SSR responses with storage-backed invalidation metadata.</p>
+      </section>
+
+      <section class="panel">
+        <p>
+          This example demonstrates how rendered response bodies are stored in Object Storage while YDB tracks cache
+          metadata, TTL, and tag-based invalidation pointers.
+        </p>
+        <p>Use it as a baseline for high-traffic pages where deterministic cache controls matter.</p>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
+  </body>
+</html>

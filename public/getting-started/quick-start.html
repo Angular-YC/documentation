@@ -4,13 +4,38 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Quick Start - Angular-YC</title>
-    <link rel="stylesheet" href="/assets/docs.css" />
+    <link rel="stylesheet" href="../assets/docs.css" />
   </head>
   <body>
-    <h1>Quick Start</h1>
-    <pre><code>angular-yc analyze --project . --verbose
+    <header class="site-header">
+      <div class="site-shell header-row">
+        <a class="brand" href="../index.html"><span class="brand-mark">AY</span>Angular-YC</a>
+        <nav class="site-nav">
+          <a href="../index.html">Home</a>
+          <a href="../docs.html">Docs</a>
+          <a href="../architecture.html">Architecture</a>
+          <a href="../deployment.html">Deployment</a>
+          <a class="active" href="quick-start.html">Quick Start</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-shell site-main">
+      <section class="hero">
+        <p class="eyebrow">Fast Path</p>
+        <h1>End-to-end deploy in three commands.</h1>
+      </section>
+
+      <section class="panel">
+        <pre><code>angular-yc analyze --project . --verbose
 angular-yc build --project . --output ./build
 angular-yc upload --build-dir ./build --bucket &lt;assets-bucket&gt; --prefix &lt;build-id&gt;</code></pre>
-    <p>After uploading, run Terraform with the generated manifest.</p>
+        <p>After upload, run Terraform using the generated manifest and artifact coordinates.</p>
+      </section>
+    </main>
+
+    <footer class="site-shell site-footer">
+      Angular-YC Documentation
+    </footer>
   </body>
 </html>

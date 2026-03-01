@@ -16,6 +16,14 @@ Build and package artifacts for deployment (`server.zip`, `image.zip`, assets, O
 angular-yc build --project . --output ./build
 ```
 
+## `angular-yc bootstrap`
+
+Initialize Terraform backend and prepare deployment buckets.
+
+```bash
+angular-yc bootstrap --config ./angular-yc-cfg.json --auto-approve
+```
+
 ## `angular-yc deploy-manifest`
 
 Validate or reconstruct `deploy.manifest.json` from build artifacts.
@@ -35,6 +43,20 @@ angular-yc upload \
   --prefix build-123 \
   --cache-bucket my-cache-bucket
 ```
+
+## `angular-yc deploy`
+
+Build, upload, and apply Terraform in one command.
+
+```bash
+angular-yc deploy --config ./angular-yc-cfg.json --auto-approve
+```
+
+`bootstrap` and `deploy` support:
+
+- CLI flags
+- `AYC_*` environment variables
+- Config file (`angular-yc-cfg.json`, `.angular-yc-cfg`, `angular-yc-cfg.yml`, `angular-yc-cfg.yaml`)
 
 ## `angular-yc plan`
 

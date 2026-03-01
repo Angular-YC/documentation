@@ -23,14 +23,21 @@
     <main class="site-shell site-main">
       <section class="hero">
         <p class="eyebrow">Fast Path</p>
-        <h1>End-to-end deploy in three commands.</h1>
+        <h1>End-to-end deploy with bootstrap and deploy.</h1>
       </section>
 
       <section class="panel">
+        <p>Recommended flow:</p>
+        <pre><code>angular-yc bootstrap --config ./angular-yc-cfg.json --auto-approve
+angular-yc deploy --config ./angular-yc-cfg.json --auto-approve</code></pre>
+        <p>
+          This keeps deployment inputs in one place and runs analyze/build/upload/apply under a single deploy contract.
+        </p>
+        <p>Need explicit control? Use the 4-step flow:</p>
         <pre><code>angular-yc analyze --project . --verbose
 angular-yc build --project . --output ./build
-angular-yc upload --build-dir ./build --bucket &lt;assets-bucket&gt; --prefix &lt;build-id&gt;</code></pre>
-        <p>After upload, run Terraform using the generated manifest and artifact coordinates.</p>
+angular-yc upload --build-dir ./build --bucket &lt;assets-bucket&gt; --prefix &lt;build-id&gt;
+# then apply Terraform module angular_yc</code></pre>
       </section>
     </main>
 

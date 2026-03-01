@@ -29,7 +29,11 @@
       <section class="panel">
         <ol>
           <li>Keep your existing Angular SSR app structure and Express entry point.</li>
-          <li>Replace custom deployment scripts with <code>angular-yc analyze/build/upload</code>.</li>
+          <li>
+            Replace custom deployment scripts with <code>angular-yc bootstrap</code> +
+            <code>angular-yc deploy</code> (recommended), or explicit
+            <code>angular-yc analyze/build/upload</code> + Terraform apply flow.
+          </li>
           <li>Adopt manifest-driven Terraform module inputs for repeatable environments.</li>
           <li>Configure response cache settings where you previously relied on ad-hoc SSR caching logic.</li>
         </ol>
